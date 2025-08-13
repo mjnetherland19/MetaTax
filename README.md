@@ -45,7 +45,7 @@ After installing the dependencies, clone this repo, and download the UBCG2 profi
 Each of the scripts can be used independently or the can be used as a set with MetaTax.sh
 
 | Component        | Explanation            |
-|:-------------:|:-------------------------:|
+|-------------|:-------------------------:|
 | **MetaTax.sh**                                             |            |
 | `MetaTax.sh -L <dir list>`                                  | Taxonomic profiling        |
 | `MetaTax.sh -L <dir list> -C <dir prefix> -M <metadata.csv>` | Taxonomic profiling and Comparative analysis |
