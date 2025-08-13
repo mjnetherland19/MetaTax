@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#for sam in ${1}/*
+#do
+
+bam=$(echo $1 | cut -d. -f1)
+samtools view -@ 4 -h -F 0x904 -b $1 > ${bam}.bam
+samtools sort -@ 4 ${bam}.bam > ${bam}_sorted.bam
+samtools index -@ 4 ${bam}_sorted.bam
+#done
