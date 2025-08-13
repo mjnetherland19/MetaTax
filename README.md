@@ -13,11 +13,25 @@ The pipeline can only profile short reads and can handle single-end and paired r
 | Hostile        | Host-read removal        |
 | library(microbiome) | Total Dataset Alpha Diversity |
 | library(phyloseq) | Total Dataset Beta Diversity |
-| MetaTaxCG.sh   | Taxonomic Profiling      |
+| **MetaTaxCG.sh**   | Taxonomic Profiling      |
 | Kraken2        | Initial Taxonomic Profiling|
 | Bowtie2        | Profiling Refinement |
 | SAM/BEDtools   | Output Transformation for filtering scripts |
-| MetaTaxComp.sh | Comparative Analysis   |
+| **MetaTaxComp.sh** | Comparative Analysis   |
 | Rank Sum Test | Diversity Indices Comparison |
 | PERMANOVA | Beta-Diversity Comparison | 
 | ALDEx2 /LinDA | Differentially Abundant Taxa | 
+
+## Dependencies
+- Hostile
+- Kraken2
+- Bowtie2
+- SAMtools
+- Bedtools
+
+**R packages:**
+- microbiome
+- phyloseq
+- vegan
+- ALDEx2
+- LinDA
