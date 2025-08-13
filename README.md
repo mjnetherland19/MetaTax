@@ -47,7 +47,7 @@ Each of the scripts can be used independently or the can be used as a set with M
 | Component        | Explanation            |
 |:-------------:|:-------------------------:|
 | **MetaTax.sh**                                             |            |
-| MetaTax.sh -L \<dir list\>                                   | Taxonomic profiling        |
+| `MetaTax.sh -L <dir list>`                                  | Taxonomic profiling        |
 | MetaTax.sh -L <dir list> -C <dir prefix> -M <metadata.csv> | Taxonomic profiling and Comparative analysis |
 | **MetaTaxCG.sh**                                           |       |
 | MetaTaxCG.sh -1 <forward read> -2 <reverse read> -t <threads> -o <output dir>        | Taxonomic Profiling (paired-end)|
