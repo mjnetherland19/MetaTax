@@ -7,6 +7,8 @@ The pipeline can only profile short reads and can handle single-end and paired r
 
 At the end of the pipeline, if comparative analysis was performed, the results are packaged into a data.pkl file and are available for easy viewing in a HTML report made using the Python package [Panel](https://panel.holoviz.org/). I will be adding a simpler report if only taxonomic profiling was run.
 
+The 'report' directory in this repo has an example file of profiling and comparative results from 10 samples (5 case, 5 control) of public data from a Parkinson's study. Just download the directory, double-click the HTML, use it to find the data.pkl file, click Confirm, and you're ready to explore the data.
+
 ## Overview
 
 | Component        | Explanation            |
