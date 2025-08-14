@@ -11,7 +11,6 @@ threads=4
 coverage=0.04
 outdir="meta_tax_out"
 keep=0
-echo $outdir
 
 print_usage() {
   echo "Mandatory args: [-1 forward read file]
@@ -19,7 +18,6 @@ Optional args :[-2 reverse read file] [-p prefix for result files] [-t threads f
 }
 
 while getopts ':1:2:o:p:t:c:k:h' flag; do
-	echo $flag
 	case "${flag}" in
 		1) R1="${OPTARG}" ;;
 		2) R2="${OPTARG}" ;;
@@ -45,7 +43,7 @@ fi
 
 if [ -d temp ] || [ -f temp ]
 then
-	echo "Please move to a directory that has no existing directory called \'temp\' and run again"
+	echo "Please move to a directory that has no existing directory called 'temp' and run again"
 	exit
 else
 
@@ -61,7 +59,6 @@ then
 else
 	kraken2 --db ${database} --confidence 0.3 --threads $threads --report ${outdir}/${prefix}.tsv --paired $R1 $R2 > /dev/null
 fi
-
 
 echo Parsing Kraken Output `date` >> ${outdir}/${prefix}.log
 ${SCRIPT_DIR}/scripts/parse_kraken_report.py ${outdir}/${prefix}.tsv ${outdir}/${prefix}_parsed.csv
