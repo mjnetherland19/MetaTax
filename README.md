@@ -1,7 +1,7 @@
 # MetaTax
 Bioinformatics pipeline for short-read metagenomic taxonomic profiling and statistical analysis of cohorts. At the end of the pipeline the results are packaged into an interactive HTML report, for easy viewing and sharing.
 
-This pipeline uses the same set of genomes as my NIID pipeline, which is a recent set of 21,258 genomes published by [NCBI](https://ncbiinsights.ncbi.nlm.nih.gov/2025/01/14/updated-bacterial-and-archaeal-reference-genome-collection-2/). However, much like MetaPhlAn, the database is comprised of marker genes. These loci are those that are described and extracted by the [UBCG2](http://leb.snu.ac.kr/ubcg2) program. These loci are then made into a custom Kraken2 database (13G). The full genomes of the taxa are used for creating a Bowtie2 index for profiling refinement. I don't have a good way of hosting the database + genomes, so post an 'Issue', if you would like to use this pipeline, and I will get it to you. Comparative analysis is available, which includes alpha-diversity rank sum tests, PERMANOVA of Bray-Curtis distance matrix, and differential abundance by ALDEx2 and LinDA. The 'Overview' section below describes each part of the pipeline and the functions it performs.
+This pipeline uses the same set of genomes as my NIID pipeline, which is a recent set of 21,258 genomes published by [NCBI](https://ncbiinsights.ncbi.nlm.nih.gov/2025/01/14/updated-bacterial-and-archaeal-reference-genome-collection-2/). However, much like MetaPhlAn, the database is comprised of marker genes. These loci are those that are described and extracted by the [UBCG2](http://leb.snu.ac.kr/ubcg2) program. These loci are then made into a custom Kraken2 database (13G). The full genomes of the taxa found by Kraken2 are used for creating a Bowtie2 index for profiling refinement. I don't have a good way of hosting the database + genomes, so post an 'Issue', if you would like to use this pipeline, and I will get it to you. Comparative analysis is available, which includes alpha-diversity rank sum tests, PERMANOVA of Bray-Curtis distance matrix, and differential abundance by ALDEx2 and LinDA. The 'Overview' section below describes each part of the pipeline and the functions it performs.
 
 The pipeline can only profile short reads and can handle single-end and paired reads. This pipeline does not perform read trimming or filtering except for host-read removal by Hostile.
 
@@ -44,7 +44,15 @@ MetaTaxCG was benchmarked with four mock metagenomes created by [NIST](https://w
 - ALDEx2
 - LinDA
 
-After installing the dependencies, clone this repo, and download the UBCG2 profiles and place them in the repo directory. This is essential for the pipeline to operate.
+**Python packages:**
+- pandas
+- ast
+- pickle
+- panel
+- glob
+- random
+
+After installing the dependencies, clone this repo, and download the MetaTax_DB and place it in the repo directory. This is essential for the pipeline to operate.
 
 ## Usage
 
