@@ -1,0 +1,12 @@
+Running Kraken Tue Jun 3 15:43:37 EDT 2025
+Parsing Kraken Output Tue Jun 3 15:44:04 EDT 2025
+Getting Taxa Names Tue Jun 3 15:44:04 EDT 2025
+Getting Core Genes Tue Jun 3 15:44:04 EDT 2025
+Building Bowtie2 Index Tue Jun 3 15:44:06 EDT 2025
+Aligning with Bowtie2 Tue Jun 3 15:44:13 EDT 2025
+Parsing SAM output Tue Jun 3 15:44:56 EDT 2025
+bamtobed Tue Jun 3 15:44:57 EDT 2025
+Filter bedfile Tue Jun 3 15:44:57 EDT 2025
+Pare bedfile Tue Jun 3 15:44:57 EDT 2025
+Rescale Tue Jun 3 15:44:58 EDT 2025
+Finished Tue Jun 3 15:44:58 EDT 2025

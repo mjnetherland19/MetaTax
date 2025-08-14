@@ -1,0 +1,36 @@
+Sample SRR24480607
+True Positives
+{'Escherichia coli': 0, 'Staphylococcus aureus subsp. aureus': 1, 'Neisseria meningitidis': 1, 'Streptococcus pyogenes': 1, 'Achromobacter xylosoxidans': 0, 'Shigella sonnei': 0, 'Enterococcus faecalis': 1, 'Vibrio furnissii': 1, 'Listeria monocytogenes': 1, 'Legionella pneumophila': 1, 'Aeromonas hydrophila subsp. hydrophila': 1}
+
+False Positives
+{'Salmonella enterica subsp. enterica', 'Neisseria benedictiae', 'Listeria welshimeri', 'Shigella dysenteriae', 'Listeria farberi', 'Listeria innocua', 'Listeria cossartiae subsp. cossartiae'}
+
+F1-score: 0.62, False Positives: 7
+-----------------------------------------------
+Sample SRR24480608
+True Positives
+{'Salmonella enterica subsp. enterica': 1, 'Acinetobacter baumannii': 1, 'Klebsiella pneumoniae subsp. pneumoniae': 1, 'Streptococcus pyogenes': 1, 'Achromobacter xylosoxidans': 1, 'Shigella sonnei': 1, 'Enterococcus faecalis': 1, 'Vibrio furnissii': 1, 'Listeria monocytogenes': 1, 'Legionella pneumophila': 1, 'Aeromonas hydrophila subsp. hydrophila': 1}
+
+False Positives
+{'Streptococcus dysgalactiae'}
+
+F1-score: 0.96, False Positives: 1
+-----------------------------------------------
+Sample SRR24480609
+True Positives
+{'Escherichia coli': 0, 'Staphylococcus aureus subsp. aureus': 1, 'Neisseria meningitidis': 1, 'Salmonella enterica subsp. enterica': 1, 'Acinetobacter baumannii': 1, 'Klebsiella pneumoniae subsp. pneumoniae': 1, 'Streptococcus pyogenes': 1, 'Achromobacter xylosoxidans': 1, 'Shigella sonnei': 1, 'Legionella pneumophila': 1, 'Aeromonas hydrophila subsp. hydrophila': 1}
+
+False Positives
+{'Streptococcus dysgalactiae', 'Klebsiella africana'}
+
+F1-score: 0.87, False Positives: 2
+-----------------------------------------------
+Sample SRR24480610
+True Positives
+{'Escherichia coli': 1, 'Staphylococcus aureus subsp. aureus': 1, 'Neisseria meningitidis': 1, 'Salmonella enterica subsp. enterica': 1, 'Acinetobacter baumannii': 1, 'Klebsiella pneumoniae subsp. pneumoniae': 1, 'Enterococcus faecalis': 1, 'Vibrio furnissii': 1, 'Listeria monocytogenes': 1, 'Legionella pneumophila': 1, 'Aeromonas hydrophila subsp. hydrophila': 1}
+
+False Positives
+{'Shigella flexneri', 'Neisseria benedictiae', 'Shigella dysenteriae'}
+
+F1-score: 0.88, False Positives: 3
+-----------------------------------------------
